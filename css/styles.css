@@ -1,0 +1,528 @@
+body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+.mobile-nav-container.hide{
+    transform: translate(9999px);
+    opacity: 0;
+    transition: 2s;
+}
+.mobile-nav-container.show{
+    transform: translate(0);
+    opacity: 1;
+    transition-duration: .6s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition-delay: 0s;
+
+}
+@media screen and (min-width: 992px){
+    .mobile-nav-container{
+        display: none !important;
+    }
+}
+.homepage-banner-container{
+    height: 100vh;
+    background-image: url('../img/homepage-banner.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.homepage-brand-content{
+    transition: .4s;
+}
+.homepage-brand-content:hover{
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    transform: rotate(-10deg);
+}
+
+.homepage-menu ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px #222;
+    font-family: 'Microsoft Yi Baiti';
+}
+.homepage-menu{
+    width: 100%;
+    align-items: center;
+}
+.homepage-menu-responsive{
+    display: none;
+}
+.homepage-menu ul{
+    display: inline-flex;
+}
+.homepage-menu ul a li{
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: .4s;
+}
+.homepage-menu ul a li:hover{
+    background-color: orange;
+    text-shadow: none;
+}
+
+.homepage-banner{
+    margin-top: 180px;
+}
+.banner-content{
+    position: relative;
+}
+.banner-background{
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+.banner-content .row{
+    z-index: 1;
+    width: 100%;
+    margin:70px 0;
+}
+.row .col .heading{
+    color: #fff;
+}
+.heading h1{
+    font-family: 'Maiandra GD';
+    font-size: 60px;
+}
+.heading p{
+    font-size: 25px;
+    font-family: 'Gadugi';
+}
+.heading p span{
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+.row .col .menu-button-right a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Maiandra GD';
+    font-size: 25px;
+    background-color: #F57F17;
+    transition: .4s;
+    padding: 20px 60px;
+    border-radius: 50px;;
+}
+.menu-button-right a:hover{
+    background-color: orange !important;
+}
+.meal-display-content .container .row .col img{
+    transition: .4s;
+    width: 100%;
+}
+.meal-display-content .container .row .col img:hover{
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    transform: rotate(-10deg);
+}
+
+.best-seller-container{
+    height: auto;
+    position: relative;
+}
+.best-seller-container .best-seller-title h1{
+    color: #390F6D;
+    font-family: 'Maiandra GD';
+    font-size: 60px;
+}
+.best-seller-container .best-seller-title p{
+    font-family: 'Maiandra GD';
+    font-size: 30px;
+    color: rgb(136, 136, 136);
+}
+.best-seller-title{
+    padding: 60px 0;
+}
+.title-mistral{
+    font-size: 100px !important;
+    font-family: 'Mistral' !important;
+}
+
+.liquor-container{
+    margin-top: 50px;
+    height: auto;
+    position: relative;
+    background-color: #F1C40F;
+}
+.liquor-image-content{
+    position: relative;
+}
+.liquor-image-content img{
+    bottom: 0;
+}
+.liquor-container .container{
+    margin-bottom: 120px;
+}
+.liquor-header{
+    padding-top: 50px;
+    text-align: center;
+}
+.liquor-header h1{
+    font-family: 'Hobo STD';
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0px 2px 2px rgb(58 58 58);
+}
+
+.barkada-meal-container{
+    background-color: #2C3E50;
+    padding: 100px 0;
+}
+.barkada-meal-container .row .col:nth-child(2) .meal-header span{
+    display: none;
+}
+.meal-header{
+    color: #fff;
+}
+.meal-header .meal-title{
+    font-family: 'Impact';
+    font-size: 100px;
+}
+.meal-header .meal-price{
+    font-family: 'Georgia';
+    font-size: 50px;
+}
+.meal-image-content{
+    padding-top: 50px;
+}
+.meal-image-content img{
+    transition: .4s;
+}
+
+.ambiance-container{
+    display: flex;
+    height: 100vh;
+    background: rgba(0,0,0, .8);
+}
+.ambiance-content{
+    flex: 1;
+    position: relative;
+}
+
+.ambiance-content .ambiance-image-content{
+    background-image: url('../img/the-ambiance.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ambiance-title{
+    text-align: center;
+    border: solid 2px #fff;
+    padding: 30px;
+    color: #fff;
+    font-family: 'Corbel';
+    font-weight: lighter;
+    font-size: 50px;
+}
+.ambiance-header{
+    padding: 0 50px;
+}
+
+.contact-container{
+    background-image: url('../img/contact-us-faded.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 220px 0;
+}
+
+.contact-title{
+    color: #fff;
+    font-family: 'Corbel';
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.contact-form input{
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px 30px;
+    outline: none;
+}
+.contact-form input:first-child{
+    font-size: 25px;
+    color: gray;
+    font-family: 'Corbel';
+}
+.contact-form input:last-child{
+    background-color: #009432;
+    color: #fff;
+    font-family: 'Franklin Gothic Book';
+    border: none;
+    transition: .4s;
+    font-size: 40px;
+}
+.contact-form input:last-child:hover{
+    background-color: #0ab442;
+}
+.contact-form textarea{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 30px;
+    outline: none;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.contact-details{
+    color: #fff;
+    font-family: 'Microsoft Yi Baiti';
+    font-weight: lighter;
+    font-size: 70px;
+}
+
+.contact-details .number{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 2px #fff;
+    padding: 10px 30px;
+}
+
+.contact-details span{
+    display: block;
+    text-align: center;
+}
+
+.navigation-bottom{
+    padding: 20px 0;
+    background-color: #1E272E;
+}
+
+
+/* TABLET RESPONSIVE */
+@media screen and (max-width: 992px){
+    /* BANNER */
+    .homepage-banner{
+        margin-top: 150px;
+    }
+    .banner-content .container .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-content .container .row .col .heading{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-content .container .row .col:nth-child(1){
+        margin-bottom: 50px;
+    }
+    .banner-content .container .row .col:nth-child(2){
+        justify-content: center !important;
+    }
+
+    /* LIQUOR */
+    .liquor-container .container .row .col .liquor-header h1{
+        font-size: 50px;
+    }
+
+    /* AMBIANCE */
+    .ambiance-container{
+        flex-direction: column;
+    }
+    .ambiance-container .ambiance-content .ambiance-image-content{
+        background-attachment: fixed;
+    }
+
+    /* CONTACT US */
+    .contact-container .container .row{
+        display: block !important;
+    }
+
+    /* HOMEPAGE MENU RESPONSIVE NAV */
+    .homepage-menu{
+        display: none !important;
+    }
+    .homepage-menu-responsive{
+        width: 100%;
+        align-items: center;
+        font-size: xx-large;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .homepage-menu-responsive .menu-button{
+        color: #fff;
+    }
+
+    /* BARKADA */
+    .barkada-meal-container .row{
+        display: block !important;
+    }
+
+    /* NAVIGATION MODAL */
+    .mobile-nav-container{
+        position: fixed;
+        z-index: 100;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        top:0;
+        bottom:0;
+    }
+    .mobile-nav-container .nav-modal .container .row ul{
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .mobile-nav-container .nav-modal .container .row ul a{
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+        color: #222;
+        font-size: 32px;
+    }
+    .mobile-nav-container .nav-modal .container .row ul li{
+        padding: 15px;
+        border-bottom: solid 2px white;
+        transition: .4s;
+    }
+    .mobile-nav-container .nav-modal .container .row ul li:hover{
+        border-bottom: solid 2px #222;
+    }
+    .mobile-nav-container .nav-modal .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .mobile-nav-container .nav-modal .close-button{
+        color: rgb(223, 35, 35);
+        font-size: 42px;
+        padding: 20px 40px;
+        text-decoration: none;
+        display: flex;
+        position: fixed;
+        right: 0;
+    }
+}
+
+/* TABLET MORE WIDTH */
+@media screen and (max-width: 1200px){
+    /* BEST SELLER */
+    .best-seller-container .container .row{
+        flex-direction: column-reverse !important;
+    }
+    .best-seller-container .container .row .col:nth-child(2){
+        display: flex;
+        justify-content: center;
+    }
+    .best-seller-container .container .row .col .best-seller-image-content{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .best-seller-container .container .row .col .best-seller-image-content img{
+        width: 100%;
+    }
+    .best-seller-container .container .row .col .best-seller-title h1{
+        text-align: center;
+    }
+    .best-seller-container .container .row .col .best-seller-title p{
+        text-align: justify;
+    }
+
+    /* BARKADA MEAL */
+    .barkada-meal-container .row .col:nth-child(2) .meal-header span{
+        display: block;
+    }
+    .barkada-meal-container .row .col:nth-child(1) .meal-header span{
+        display: none;
+    }
+    .barkada-meal-container .meal-header .meal-title{
+        font-size: 70px;
+    }
+    .barkada-meal-container .row .col:nth-child(1){
+        display: flex;
+        justify-content: center;
+    }
+    .barkada-meal-container .row .col:nth-child(2) .meal-image-content, .meal-header{
+        display: flex;
+        justify-content: center;
+    } 
+    .barkada-meal-container .row .col:nth-child(2){
+        display: block;
+        justify-content: center;
+    }
+
+    /* CONTACT US */
+    .contact-container .container .row .col .contact-details{
+        font-size: 50px;
+    }
+    .contact-container .container .row .col:nth-child(2){
+        margin-top: 50px;
+    }
+    .contact-container{
+        padding: 120px 0;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px){
+    /* BANNER */
+    .homepage-banner{
+        margin-top: 120px;
+    }
+
+    /* LIQUOR */
+    .liquor-container .container .row .col .liquor-header h1{
+        font-size: 38px;
+    }
+
+    /* BARKADA MEAL */
+    .barkada-meal-container{
+        padding: 0 30px;
+    }
+    .barkada-meal-container .meal-header .meal-title{
+        font-size: 50px;
+    }
+
+    /* AMBIANCE */
+    .ambiance-container .ambiance-content .ambiance-header h1{
+        font-size: 32px;
+    }
+
+    /* CONTACT US */
+    .contact-container .container .row .col .contact-details{
+        font-size: xx-large;
+    }
+}
+
+/* MOBILE 500px screen */
+@media screen and (max-width: 512px){
+    /* BARKADA MEAL */
+    .barkada-meal-container .row .col:nth-child(2) .meal-image-content img{
+        width: 100%;
+    }
+}
+
+/* MOBILE MIN WIDTH */
+@media screen and (max-width: 440px){
+    /* BARKADA MEAL */
+    .barkada-meal-container .meal-header .meal-title{
+        font-size: 30px;
+    }
+    .barkada-meal-container .meal-header .meal-price{
+        font-size: 28px;
+    }
+    .barkada-meal-container{
+        padding: 30px 0;
+    }
+}
